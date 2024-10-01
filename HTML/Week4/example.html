@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Exercise - Week 3</title>
+</head>
+<body>
+
+<!-- Create a form for user feedback with text input fields, radio buttons, a checkbox, and a submit button -->
+<form id="feedbackForm" action="thankyou.html" method="get" style="border: 1px solid black; padding: 10px; max-width: 500px;" autocomplete="on">
+    <h1>Feedback Form</h1>
+ <fieldset>
+    <!-- Full Name Field -->
+    <label for="fullname">*Full Name:</label>
+    <input type="text" id="fullname" name="fullname" required />
+    <br /><br />
+
+    <!-- Email Field -->
+    <label for="email">*Email:</label>
+    <input type="email" id="email" name="email" required />
+    <br /><br />
+
+    <!-- Phone Field -->
+    <label for="phone">*Phone:</label>
+    <input type="tel" id="phone" name="phone" required />
+    <br /><br />
+</fieldset>
+<fieldset>
+
+    <!-- Date of Visit Field -->
+    <label for="date">*Date of Visit:</label>
+    <input type="date" id="date" name="date" required />
+    <br />
+    </fieldset>
+    <fieldset>
+    <!-- Feedback Section -->
+    <h3>What did you <strong>REALLY</strong> think of this site?*</h3>
+    <input type="radio" id="option1" name="option" value="1" required />
+    <label for="option1">I Love It!</label>
+    <br />
+    <input type="radio" id="option2" name="option" value="2" />
+    <label for="option2">I Hate It!</label>
+    <br /><br />
+
+    <!-- Recommendation Dropdown -->
+    <label for="recommend">Would You Recommend This Site?</label>
+    <select id="recommend" name="recommend" required>
+        <option value="">Select an option</option> <!-- Added placeholder option -->
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+        <option value="Maybe">Maybe</option>
+    </select>
+    <br /><br />
+
+    <!-- Message Text Area -->
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" cols="30" placeholder="Of course you love us, why wouldn't you?!" readonly></textarea>
+    <br /><br />
+
+    <!-- Terms and Conditions Checkbox -->
+    <label for="subscribe">Agree to <a href="terms.html">Terms & Conditions</a></label>
+    <input type="checkbox" id="subscribe" name="subscribe" value="subscribe" required />
+    <br /><br />
+
+    <!-- Submit Button, right-aligned -->
+    <div style="text-align: right;">
+        <button type="submit" style="padding: 10px; background-color: #4CAF50; color: white; border: none; cursor: pointer;">Send</button>
+    </div>
+</form>
+
+</body>
+</html>
